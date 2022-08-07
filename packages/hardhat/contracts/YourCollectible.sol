@@ -24,7 +24,7 @@ contract YourCollectible is ERC721Enumerable, Ownable {
     mapping(uint256 => bytes3) public color;
     mapping(uint256 => uint256) public mouthWidth;
 
-    uint256 mintDeadline = block.timestamp + 3650 days;
+    uint256 mintDeadline = block.timestamp + 8 days;
 
     function mintItem() public returns (uint256) {
         require(block.timestamp < mintDeadline, "DONE MINTING");
